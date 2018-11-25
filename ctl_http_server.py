@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import sys
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from socketserver import ThreadingMixIn
@@ -16,8 +15,8 @@ class ChaiTeaLatteHandler(BaseHTTPRequestHandler):
                 size = int(self.path[1:])
                 if 100 <= size <= 20000:
                     filename = str(size) + ".html"
-                    content = "<html>\n<head>\n<title></title>\n</head>\n<body>\n"
-                    for x in range(0, size - 68):
+                    content = "<html>\n<head>\n<title>"+str(size)+" Byte!</title>\n</head>\n<body>\n"
+                    for x in range(0, size - 74 - len(str(size))):
                         content += "A"
                     content += "\n</body>\n</html>"
                     f = open(filename, "w")
@@ -34,10 +33,10 @@ class ChaiTeaLatteHandler(BaseHTTPRequestHandler):
                     return
 
                 else:
-                    self.send_error(400, 'Requested size must be greater than 100, or less than 20000')
+                    self.send_error(414, 'Request-URI Not Suitable')
                     return
             else:
-                self.send_error(400, 'Requested size must be an integer.')
+                self.send_error(414, 'Request-URI Must Be Integer')
                 return
 
         except IOError:
