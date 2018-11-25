@@ -1,4 +1,5 @@
 import sys
+import os
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from socketserver import ThreadingMixIn
 
@@ -15,9 +16,25 @@ class ChaiTeaLatteHandler(BaseHTTPRequestHandler):
                 size = int(self.path[1:])
                 if 100 <= size <= 20000:
                     filename = str(size) + ".html"
+                    w_size = size - 74 - len(str(size))
                     content = "<html>\n<head>\n<title>"+str(size)+" Byte!</title>\n</head>\n<body>\n"
-                    for x in range(0, size - 74 - len(str(size))):
-                        content += "A"
+                    if os.path.isfile("ctl"):
+                        ctl_size = os.path.getsize("ctl")
+                        if ctl_size < w_size:
+                            ctl_f = open("ctl", "r")
+                            ctl = ctl_f.read()
+                            ctl_f.close()
+                            content += ctl
+                            for i in range(0, w_size - ctl_size):
+                                content += ' '
+                        else:
+                            recipe = "<h2>To load Chai Tea Latte Recipe, at least 2479 bytes needed!</h2>"
+                            content += recipe[0:w_size]
+                            for i in range(0, w_size - len(recipe)):
+                                content += ' '
+                    else:
+                        for i in range(0, w_size):
+                            content += "A"
                     content += "\n</body>\n</html>"
                     f = open(filename, "w")
                     f.write(content)
