@@ -74,7 +74,6 @@ class ChaiTeaLatteProxy(BaseHTTPRequestHandler):
                         self.send_response(200)
                         self.send_header('Content-Type', "text/html")
                         self.send_header('Content-Size', size)
-                        print(data)
                     else:
                         print("Cache miss!")
                         res = conn.getresponse()
@@ -82,7 +81,6 @@ class ChaiTeaLatteProxy(BaseHTTPRequestHandler):
                         self.send_header('Content-Type', res.getheader('Content-Type'))
                         self.send_header('Content-Size', res.getheader('Content-Size'))
                         data = res.read()
-                        print(data)
                         f = open(cache, "wb")
                         f.write(data)
                     f.close()
