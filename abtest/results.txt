@@ -1,0 +1,258 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ipv4.download.thinkbroadband.com (be patient).....done
+
+
+Server Software:        nginx
+Server Hostname:        ipv4.download.thinkbroadband.com
+Server Port:            80
+
+Document Path:          /5MB.zip
+Document Length:        5242880 bytes
+
+Concurrency Level:      1
+Time taken for tests:   65.393 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      52431510 bytes
+HTML transferred:       52428800 bytes
+Requests per second:    0.15 [#/sec] (mean)
+Time per request:       6539.299 [ms] (mean)
+Time per request:       6539.299 [ms] (mean, across all concurrent requests)
+Transfer rate:          783.00 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       53   90  46.0     77     200
+Processing:  4700 6449 2145.3   5604   11507
+Waiting:       47   77  40.8     63     178
+Total:       4800 6539 2153.5   5673   11644
+
+Percentage of the requests served within a certain time (ms)
+  50%   5673
+  66%   5906
+  75%   8042
+  80%   8194
+  90%  11644
+  95%  11644
+  98%  11644
+  99%  11644
+ 100%  11644 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ipv4.download.thinkbroadband.com (be patient).....done
+
+
+Server Software:        nginx
+Server Hostname:        ipv4.download.thinkbroadband.com
+Server Port:            80
+
+Document Path:          /5MB.zip
+Document Length:        5242880 bytes
+
+Concurrency Level:      5
+Time taken for tests:   70.041 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      52431510 bytes
+HTML transferred:       52428800 bytes
+Requests per second:    0.14 [#/sec] (mean)
+Time per request:       35020.715 [ms] (mean)
+Time per request:       7004.143 [ms] (mean, across all concurrent requests)
+Transfer rate:          731.03 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       53  146 107.0    115     379
+Processing:  9497 31466 18233.6  31662   65297
+Waiting:       47  218 122.9    247     432
+Total:       9735 31612 18214.8  32040   65350
+
+Percentage of the requests served within a certain time (ms)
+  50%  32040
+  66%  35327
+  75%  44719
+  80%  52780
+  90%  65350
+  95%  65350
+  98%  65350
+  99%  65350
+ 100%  65350 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ipv4.download.thinkbroadband.com (be patient).....done
+
+
+Server Software:        nginx
+Server Hostname:        ipv4.download.thinkbroadband.com
+Server Port:            80
+
+Document Path:          /5MB.zip
+Document Length:        5242880 bytes
+
+Concurrency Level:      10
+Time taken for tests:   149.234 seconds
+Complete requests:      10
+Failed requests:        1
+   (Connect: 0, Receive: 0, Length: 1, Exceptions: 0)
+Total transferred:      52183239 bytes
+HTML transferred:       52180529 bytes
+Requests per second:    0.07 [#/sec] (mean)
+Time per request:       149233.974 [ms] (mean)
+Time per request:       14923.397 [ms] (mean, across all concurrent requests)
+Transfer rate:          341.48 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       47   91  39.2     85     163
+Processing: 26980 110864 35976.7 123972  148817
+Waiting:       69  420 263.5    416     818
+Total:      27027 110955 35989.4 124119  148902
+
+Percentage of the requests served within a certain time (ms)
+  50%  124119
+  66%  127104
+  75%  138838
+  80%  140202
+  90%  148902
+  95%  148902
+  98%  148902
+  99%  148902
+ 100%  148902 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ipv4.download.thinkbroadband.com (be patient).....done
+
+
+Server Software:        nginx
+Server Hostname:        ipv4.download.thinkbroadband.com
+Server Port:            80
+
+Document Path:          /5MB.zip
+Document Length:        5242880 bytes
+
+Concurrency Level:      1
+Time taken for tests:   149.267 seconds
+Complete requests:      10
+Failed requests:        0
+Keep-Alive requests:    10
+Total transferred:      52431560 bytes
+HTML transferred:       52428800 bytes
+Requests per second:    0.07 [#/sec] (mean)
+Time per request:       14926.684 [ms] (mean)
+Time per request:       14926.684 [ms] (mean, across all concurrent requests)
+Transfer rate:          343.03 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   43 136.1      0     430
+Processing:  8023 14884 3915.1  16146   21867
+Waiting:       51   86  51.3     68     224
+Total:       8023 14927 4001.8  16146   22297
+
+Percentage of the requests served within a certain time (ms)
+  50%  16146
+  66%  16157
+  75%  17110
+  80%  17111
+  90%  22297
+  95%  22297
+  98%  22297
+  99%  22297
+ 100%  22297 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ipv4.download.thinkbroadband.com (be patient).....done
+
+
+Server Software:        nginx
+Server Hostname:        ipv4.download.thinkbroadband.com
+Server Port:            80
+
+Document Path:          /5MB.zip
+Document Length:        5242880 bytes
+
+Concurrency Level:      5
+Time taken for tests:   88.664 seconds
+Complete requests:      10
+Failed requests:        1
+   (Connect: 0, Receive: 0, Length: 1, Exceptions: 0)
+Keep-Alive requests:    9
+Total transferred:      50684820 bytes
+HTML transferred:       50682060 bytes
+Requests per second:    0.11 [#/sec] (mean)
+Time per request:       44331.828 [ms] (mean)
+Time per request:       8866.366 [ms] (mean, across all concurrent requests)
+Transfer rate:          558.25 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   40  45.0     57     113
+Processing: 18117 39723 20804.6  39406   81261
+Waiting:       64  152  64.0    170     234
+Total:      18117 39764 20826.1  39406   81326
+
+Percentage of the requests served within a certain time (ms)
+  50%  39406
+  66%  39792
+  75%  40237
+  80%  69783
+  90%  81326
+  95%  81326
+  98%  81326
+  99%  81326
+ 100%  81326 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ipv4.download.thinkbroadband.com (be patient).....done
+
+
+Server Software:        nginx
+Server Hostname:        ipv4.download.thinkbroadband.com
+Server Port:            80
+
+Document Path:          /5MB.zip
+Document Length:        5242880 bytes
+
+Concurrency Level:      10
+Time taken for tests:   116.556 seconds
+Complete requests:      10
+Failed requests:        2
+   (Connect: 0, Receive: 0, Length: 2, Exceptions: 0)
+Keep-Alive requests:    8
+Total transferred:      51400672 bytes
+HTML transferred:       51397912 bytes
+Requests per second:    0.09 [#/sec] (mean)
+Time per request:       116555.959 [ms] (mean)
+Time per request:       11655.596 [ms] (mean, across all concurrent requests)
+Transfer rate:          430.66 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  108  78.0    120     246
+Processing: 15320 87437 38842.6 106160  116016
+Waiting:      128  899 500.7    945    1601
+Total:      15320 87545 38903.0 106340  116146
+
+Percentage of the requests served within a certain time (ms)
+  50%  106340
+  66%  107948
+  75%  111820
+  80%  114122
+  90%  116146
+  95%  116146
+  98%  116146
+  99%  116146
+ 100%  116146 (longest request)
