@@ -51,7 +51,7 @@ def  create_response(request):
         req_uri = req_parts[1].split('/')[3]  #get uri
         if req_uri.isdigit(): #digit check
             size = int(req_uri)
-            if size < 9999: #request bounds check
+            if size <= 9999: #request bounds check
                 m = hashlib.md5() #select encyript type according to md5
                 m.update(req_parts[1].encode()) #encyript cache name
                 cache = m.hexdigest() + ".cache" #cache name
