@@ -45,7 +45,7 @@ def  create_response(request):
     req_parts = request.split(' ')  #split request by spaces
     req_message = req_parts[0]  # get request code
     filetype = "text/html"
-    if req_message == 'GET':
+    if req_message == 'GET' and request.find("127.0.0.1") != -1:
         req_server = req_parts[1].split('/')[2] #get domain name 
         port = int(req_server.split(':')[1]) #get port
         req_uri = req_parts[1].split('/')[3]  #get uri
@@ -66,7 +66,7 @@ def  create_response(request):
                     request = request.replace(req_parts[1], '/'+req_uri, 1) #
                     try:
                         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-                            s.connect(('127.0.0.1', 8080))
+                            s.connect(('127.0.0.1', port))
                             s.sendall(request.encode())
                             data = s.recv(10240)
                         w_data = data.decode().split("\r\n\r\n")[1]
